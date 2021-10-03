@@ -39,8 +39,8 @@ int main(int argc, const char * argv[]) {
     }
     
     //load shader
-    Shader shader("/Users/focus/Downloads/opengl/TextureSampleCopy/TextureSampleCopy/texture.vs",
-                  "/Users/focus/Downloads/opengl/TextureSampleCopy/TextureSampleCopy/texture.fs");
+    Shader shader("/Users/focus/Downloads/OpenGLForThesis/Texture/TextureSampleCopy/TextureSampleCopy/texture.vs",
+                  "/Users/focus/Downloads/OpenGLForThesis/Texture/TextureSampleCopy/TextureSampleCopy/texture.fs");
     
     float vertices[] = {
            // positions          // colors           // texture coords
@@ -84,7 +84,7 @@ int main(int argc, const char * argv[]) {
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR_MIPMAP_LINEAR);
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
     int width, height, nrChannels;
-    unsigned char *data = stbi_load("/Users/focus/Downloads/container.jpeg", &width, &height, &nrChannels, 0);
+    unsigned char *data = stbi_load("/Users/focus/Downloads/OpenGLForThesis/test.jpg", &width, &height, &nrChannels, 0);
     if (data)
     {
         glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, width, height, 0, GL_RGB, GL_UNSIGNED_BYTE, data);
@@ -95,6 +95,8 @@ int main(int argc, const char * argv[]) {
         std::cout << "Failed to load texture" << std::endl;
     }
     stbi_image_free(data);
+    
+    
     
     while (!glfwWindowShouldClose(window))
     {

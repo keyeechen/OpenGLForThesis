@@ -42,7 +42,7 @@
 		E7FE8F222706E54C0060BFB8 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
 		E7FE8F242706E55A0060BFB8 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
 		E7FE8F262706E5640060BFB8 /* libglfw3.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libglfw3.a; path = ../../../../../usr/local/lib/libglfw3.a; sourceTree = "<group>"; };
-		E7FE8F282706E6560060BFB8 /* shader_file.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = shader_file.h; path = ../../TextureSimple/TextureSimple/shader_file.h; sourceTree = "<group>"; };
+		E7FE8F4F2707229E0060BFB8 /* shader_file.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = shader_file.h; path = ../../TextureExampleMultiple/TextureExampleMultiple/shader_file.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,7 +82,7 @@
 		E7FE8F0E2706E3820060BFB8 /* TextureSampleCopy */ = {
 			isa = PBXGroup;
 			children = (
-				E7FE8F282706E6560060BFB8 /* shader_file.h */,
+				E7FE8F4F2707229E0060BFB8 /* shader_file.h */,
 				E7FE8F192706E44B0060BFB8 /* texture.fs */,
 				E7FE8F1A2706E44B0060BFB8 /* texture.vs */,
 				E7FE8F172706E3AB0060BFB8 /* glad.c */,
